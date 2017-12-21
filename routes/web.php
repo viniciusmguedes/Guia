@@ -10,7 +10,7 @@
 |
 */
 
-Dusterio\LumenPassport\LumenPassport::routes($this->$router);
+Dusterio\LumenPassport\LumenPassport::routes($router);
 $router->get('/', function () use ($router) {
     //return $router->app->version();
     return view ('teste');
