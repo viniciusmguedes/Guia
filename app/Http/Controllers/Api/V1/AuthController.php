@@ -16,6 +16,16 @@ class AuthController extends Controller
             ->first();
         return response()->json($user);
     }
+    public function register(Request $request)
+    {
+        $data = $request->all();
+        $user = new User;
+        $user->name = $data['name'];
+        $user->email = $data['email'];
+        $user->password = app('hash')->make($data['password']);
+        $user->create();
+        return response()->json(['status' => 'success']);
+    }
     public function changePassword (Request $request)
     {
         $rules = [

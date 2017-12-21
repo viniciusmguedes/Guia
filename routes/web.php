@@ -19,10 +19,16 @@ $router->group(['prefix' => 'api/v1', 'namespace' => 'Api\V1'], function () use 
     $router->get('restaurants/by-address', 'RestaurantsController@getByAddress');
     $router->post('restaurants/vote', 'VotesController@store');
     $router->get('restaurants/{id:[0-9]+}/view-phone', 'RestaurantsController@viewPhone');
+
+    $router->get('restaurants/{id:[0-9]+}', 'RestaurantsController@show');
+    $router->get('products', 'ProductsController@index');
+    $router->get('restaurants/{id:[0-9]+}/photos', 'RestaurantPhotosController@index');
+
+    $router->post('auth/register', 'AuthController@register');
+
 });
 $router->group(['prefix' => 'api/v1', 'namespace' => 'Api\V1', 'middleware' => ['auth']], function () use ($router){
     $router->get('restaurants', 'RestaurantsController@index');
-    $router->get('restaurants/{id:[0-9]+}', 'RestaurantsController@show');
     $router->post('restaurants', 'RestaurantsController@store');
     $router->put('restaurants/{id:[0-9]+}', 'RestaurantsController@update');
     $router->post('restaurants/{id:[0-9]+}', 'RestaurantsController@update');
@@ -31,11 +37,9 @@ $router->group(['prefix' => 'api/v1', 'namespace' => 'Api\V1', 'middleware' => [
     $router->post('restaurants/{id:[0-9]+}/address', 'RestaurantsController@address');
     $router->post('restaurants/{id:[0-9]+}/upload', 'RestaurantsController@upload');
 
-    $router->get('restaurants/{id:[0-9]+}/photos', 'RestaurantPhotosController@index');
     $router->post('restaurants/photos', 'RestaurantPhotosController@store');
     $router->delete('restaurants/photos/{id:[0-9]+}', 'RestaurantPhotosController@destroy');
 
-    $router->get('products', 'ProductsController@index');
     $router->get('products/{id:[0-9]+}', 'ProductsController@show');
     $router->post('products', 'ProductsController@store');
     $router->post('products/{id:[0-9]+}', 'ProductsController@update');
