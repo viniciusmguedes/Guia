@@ -1,9 +1,7 @@
 <?php
-
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
-
 class AddLatLongToAddresses extends Migration
 {
     /**
@@ -18,7 +16,6 @@ class AddLatLongToAddresses extends Migration
             $table->float('longitude', 10, 6)->after('complement');
         });
     }
-
     /**
      * Reverse the migrations.
      *
