@@ -23,7 +23,7 @@ class AuthController extends Controller
         $user->name = $data['name'];
         $user->email = $data['email'];
         $user->password = app('hash')->make($data['password']);
-        $user->create();
+        $user->save();
         return response()->json(['status' => 'success']);
     }
     public function changePassword (Request $request)
