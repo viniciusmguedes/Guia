@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "1667057c7c5e3f966f76fb47db9528ec",
+    "content-hash": "c6410d63788cf0e56c7bf42794b63e2c",
     "packages": [
         {
             "name": "anthonymartin/geo-location",
@@ -133,16 +133,16 @@
         },
         {
             "name": "barryvdh/laravel-cors",
-            "version": "v0.10.1",
+            "version": "v0.9.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/barryvdh/laravel-cors.git",
-                "reference": "b64caccbfc33b9ee2ba7dcce3307590882ede9ad"
+                "reference": "2551489de60486471434b0c7050f7fc65f9c9119"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/barryvdh/laravel-cors/zipball/b64caccbfc33b9ee2ba7dcce3307590882ede9ad",
-                "reference": "b64caccbfc33b9ee2ba7dcce3307590882ede9ad",
+                "url": "https://api.github.com/repos/barryvdh/laravel-cors/zipball/2551489de60486471434b0c7050f7fc65f9c9119",
+                "reference": "2551489de60486471434b0c7050f7fc65f9c9119",
                 "shasum": ""
             },
             "require": {
@@ -159,7 +159,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "0.10-dev"
+                    "dev-master": "0.9-dev"
                 },
                 "laravel": {
                     "providers": [
@@ -192,7 +192,7 @@
                 "crossdomain",
                 "laravel"
             ],
-            "time": "2017-12-19T21:08:24+00:00"
+            "time": "2017-08-28T11:42:05+00:00"
         },
         {
             "name": "defuse/php-encryption",
