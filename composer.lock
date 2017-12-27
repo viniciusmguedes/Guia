@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "c6410d63788cf0e56c7bf42794b63e2c",
+    "content-hash": "e94c13ea36b788b808ce267ff9d6cc8b",
     "packages": [
         {
             "name": "anthonymartin/geo-location",
@@ -326,21 +326,21 @@
         },
         {
             "name": "dusterio/lumen-passport",
-            "version": "0.2.4",
+            "version": "0.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dusterio/lumen-passport.git",
-                "reference": "1ee1874d8178a4430033a8c92cabae86cce1053d"
+                "reference": "c70a5974924429083c44e22a25cf7726def01f24"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dusterio/lumen-passport/zipball/1ee1874d8178a4430033a8c92cabae86cce1053d",
-                "reference": "1ee1874d8178a4430033a8c92cabae86cce1053d",
+                "url": "https://api.github.com/repos/dusterio/lumen-passport/zipball/c70a5974924429083c44e22a25cf7726def01f24",
+                "reference": "c70a5974924429083c44e22a25cf7726def01f24",
                 "shasum": ""
             },
             "require": {
-                "illuminate/database": "~5.3|~5.4|~5.5",
-                "illuminate/support": "~5.3|~5.4|~5.5",
+                "illuminate/database": "~5.3|~5.4",
+                "illuminate/support": "~5.3|~5.4",
                 "laravel/passport": ">=0.2.2",
                 "php": ">=5.6.4"
             },
@@ -373,7 +373,7 @@
                 "lumen",
                 "php"
             ],
-            "time": "2017-10-27T04:18:05+00:00"
+            "time": "2017-05-10T14:00:58+00:00"
         },
         {
             "name": "firebase/php-jwt",
